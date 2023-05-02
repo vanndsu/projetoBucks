@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+}
+
+header{
+
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;    
+    border-bottom: 3px solid black;
+}
+
+.container{
+
+    width: 800px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+      
+    
+    
+}
+nav ul, nav li{
+    display: flex;
+    list-style-type: none;
+    align-self: flex-end;
+    padding: 5px;    
+    
+    
+
+
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: rgb(28, 90, 31);
+    margin: 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a:hover,
+nav .active{
+    background-color: rgb(28, 90, 31);
+    color: rgb(228, 238, 175);
+
+
+}
+nav li{
+    
+    
+}
+
+
+.menu{
+    display: flex;
+    align-items: flex-end;
+
+
+}
+#bg-bucks{
+    height: 500px;
+    background-image: url('../images/bg-bucks.jpg');
+    background-position: center;
+    background-size: cover;
+}
