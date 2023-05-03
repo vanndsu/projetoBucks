@@ -1,67 +1,116 @@
-body{
-    margin: 0px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bucks</title>
+</head>
 
-header{
+<body>
 
-    height: 120px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;    
-    border-bottom: 3px solid rgb(228, 238, 175);
-}
+    <header>
 
-.container{
+        <div class="container">
 
-    width: 800px;
-    height: 120px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-      
+            <div class="logo">
+                <img src="assets/images/bucks.png" alt="" width="120" height="120">
+            </div>  
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="">Home</a></li>
+                        <li><a href="">Jogadores</a></li>
+                        <li><a href="">História</a></li>
+                        <li><a href="">Títulos</a></li>
+                    </ul>
+
+                </nav>
+                                    
+            </div>             
+    
+        </div>
+        
+    </header>
+
+    <section id="bg-bucks">
+
+        <div  class="container column">
+
+            <div class="banner_headline">   
+
+                <h1>Milwaukee Bucks</h1>
+                <h2>Um dos melhores times da NBA</h2>
+
+            </div>
+
+            <div class="banner_options">
+
+                <div class="banner1">
+                    <div  class="banner_title">
+                        Principal Jogador
+                    </div>
+                        <div class="banner_desc">
+                            O grego <b>Giannis Antetokounmpo</b> é um dos principais atletas do time do Milwaukee Bucks.
+                        
+                        </div>                          
+
+                        <a href="https://pt.wikipedia.org/wiki/Giannis_Antetokounmpo" target="_blank">Saiba mais sobre ele</a>
+                           
+                   
+                </div>
+
+                <div class="banner2">
+                    <div  class="banner_title">
+                        Próximos Jogos
+                    </div>
+                        <div class="banner_desc">
+
+                            <div class="jogo">
+                                16/04 - Heat x Bucks
+                            </div>
+
+                            <div class="jogo">
+                                19/04 - Bucks x Heat
+                            </div>
+
+                            <div class="jogo">
+                                22/04 - Heat x Bucks
+                            </div>
+
+                        </div>
+                    
+                </div>
+
+                <div class="banner3">
+                    <div  class="banner_title">
+                        Lances
+                    </div>
+                        <div class="banner_desc">
+
+                            Veja alguns dos lances mais importantes do time.
+                            
+                        </div>
+                        
+                        <div class="link3">
+                            <a href="https://www.youtube.com/watch?v=zOqhgaJtH0k" target="_blank">Clique aqui para visualizar</a>
+                        </div>
+                        
+                        
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
     
     
-}
-nav ul, nav li{
-    display: flex;
-    list-style-type: none;
-    align-self: flex-end;
-    padding: 5px;    
-    
-    
+</body>
 
-
-}
-nav a{
-    text-decoration: none;
-    text-transform: uppercase;    
-    color: rgb(28, 90, 31);
-    margin: 0px;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-nav a:hover,
-nav .active{
-    background-color: rgb(28, 90, 31);
-    color: rgb(228, 238, 175);
-
-
-}
-nav li{
-    
-    
-}
-
-
-.menu{
-    display: flex;
-    align-items: flex-end;
-
-
-}
-#bg-bucks{
-    height: 500px;
-    background-image: url('../images/bg-bucks.jpg');
-    background-position: center;
-    background-size: cover;
-}
+</html>
