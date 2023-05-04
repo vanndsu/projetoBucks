@@ -68,7 +68,7 @@ nav li{
 }
 #bg-bucks{
     height: 670px;
-    background-image: url('../images/bgd-bucks.jpg');
+    background-image: url('../images/bg-bucks.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
