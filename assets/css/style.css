@@ -2,6 +2,7 @@
     font-family: bucksFont;
     src: url('../fonts/NBA\ Bucks.ttf');
 }
+
 body{
     margin: 0px;
 }
@@ -67,7 +68,7 @@ nav li{
 }
 #bg-bucks{
     height: 670px;
-    background-image: url('../images/bg-bucks.jpg');
+    background-image: url('../images/bgd-bucks.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -170,3 +171,48 @@ nav li{
     color: rgb(0, 0, 0);
     
 }
+
+#conteudo{
+
+    display: flex;
+    justify-content: center;
+}
+#conteudo section{
+    
+    flex: 2;
+}
+#conteudo aside{
+    
+    flex: 1;
+}
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    text-transform: uppercase;
+    
+
+}
+.widget_title_bar{
+    margin-top: 15px;
+    width: 70px;
+    background-color: aquamarine;
+    height: 5px;
+    
+}
+.main_players{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+.main_players div{
+    margin: 10px;    
+    background-color: rgb(145, 173, 145);
+    width: 100px;
+    height: 100px;
+    
+}
+
