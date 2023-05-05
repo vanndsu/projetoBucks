@@ -2,23 +2,28 @@
     font-family: bucksFont;
     src: url('../fonts/NBA\ Bucks.ttf');
 }
+:root{
+    --cor-fonte-bar: rgb(193, 235, 146);
+    --verde-header: rgb(7, 114, 30);
+}
 
 body{
     margin: 0px;
 }
 
+/*NAV BAR*/
 header{
 
     height: 120px;
-    background-color: rgb(248, 255, 206);
+    background-color: var(--verde-header);
     display: flex;
     justify-content: center;    
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid var(--cor-fonte-bar);
 }
 
 .container{
 
-    width: 800px;    
+    width: 800px;
     
     display: flex;
     justify-content: space-between;
@@ -30,7 +35,7 @@ nav ul, nav li{
     display: flex;
     list-style-type: none;
     align-self: flex-end;
-    padding: 5px;    
+    margin: 0px;
     
     
 
@@ -39,8 +44,8 @@ nav ul, nav li{
 nav a{
     text-decoration: none;
     text-transform: uppercase;    
-    color: rgb(28, 90, 31);
-    margin: 0px;
+    color: rgb(193, 235, 146);
+    margin: 5px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -48,17 +53,13 @@ nav a{
 }
 nav a:hover,
 nav .active{
-    background-color: rgb(28, 90, 31);
+    background-color: rgb(1, 70, 1);
     color: rgb(255, 255, 255);
-    transition: all 0.3s linear;
+    transition: all 0.1s linear;
+    margin-bottom: 3px;
 
 
 }
-nav li{
-    
-    
-}
-
 
 .menu{
     display: flex;
@@ -66,9 +67,11 @@ nav li{
 
 
 }
+
+/*PARTE DO BACKGROUND BUCKS*/
 #bg-bucks{
     height: 670px;
-    background-image: url('../images/bg-bucks.jpg');
+    background-image: url('../images/bgd-bucks.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -89,7 +92,7 @@ nav li{
     flex: 1;
 }
 .banner_headline  h1{
-    color: rgb(248, 255, 206);
+    color: var(--cor-fonte-bar);
     font-size: 50px;
     font-family: bucksFont;
     text-shadow: 2px 2px 0px black;
@@ -97,7 +100,7 @@ nav li{
     max-width: 320px;
 }
 .banner_headline  h2{
-    color: rgb(248, 255, 206);
+    color: var(--cor-fonte-bar);
     font-size: 15px;
     text-align: center;
     text-shadow: 2px 2px 5px black;
@@ -120,7 +123,8 @@ nav li{
 .banner1,
 .banner2,
 .banner3{
-
+    
+    border-top: 2px solid var(--cor-fonte-bar);
     flex: 1;
     padding: 20px;
 
@@ -132,46 +136,47 @@ nav li{
 
 }
 .banner2{
-    background-color: rgb(4, 168, 146);
+    background-color: rgb(1, 104, 1);
 
 }
 .banner3{
-    background-color: rgb(6, 167, 92);
+    background-color: rgb(1, 90, 1);
 
 }
 .banner_title{
     font-size: 20px;
-    color: white;
+    color: var(--cor-fonte-bar);
     text-shadow: 0.5px 0.5px 2px black;
     padding-bottom: 20px;
 }
 .banner_desc{
     margin-bottom: 30px;
-    color: white;
+    color: var(--cor-fonte-bar);
 }
 .jogo{
     padding: 10px;
     margin-bottom: 5px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid var(--cor-fonte-bar);
     
 }
 .banner1 a, .banner3 a{
     margin-top: 5px;
     text-decoration: none;
-    color: white;
-    border: 1px solid rgb(255, 255, 255);
+    color: var(--cor-fonte-bar);
+    border: 1px solid var(--cor-fonte-bar);
     padding: 8px;
 }
 
- .link3{
+.link3{
 
     padding-top: 36px;  
 }
 .banner_options a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(215, 243, 115);
     
 }
 
+/*CONTEUDO*/
 #conteudo{
 
     display: flex;
@@ -191,14 +196,15 @@ nav li{
 }
 .widget_title_text{
     text-transform: uppercase;
+    font-weight: bold;
     
 
 }
 .widget_title_bar{
-    margin-top: 15px;
-    width: 70px;
-    background-color: aquamarine;
-    height: 5px;
+    margin-top: 10px;
+    width: 90px;
+    background-color: var(--verde-header);
+    height: 2px;
     
 }
 .main_players{
@@ -210,9 +216,72 @@ nav li{
 }
 .main_players div{
     margin: 10px;    
-    background-color: rgb(145, 173, 145);
+    background-color: var(--verde-header);
     width: 100px;
     height: 100px;
     
 }
+/*widgets*/
+.widget{
+    font-family: Arial, Helvetica, sans-serif;
+   
 
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+article{
+    flex: 1;
+    min-width: 170px;
+    margin-right: 10px;
+}
+article a{
+    text-decoration: none;
+}
+article .news_date{
+    display: flex;
+    flex-direction: row;
+    
+}
+.news_posted_at{
+    margin-right: 2px;
+    color: white;
+    background-color: var(--verde-header);
+    font-size: 12px;
+    padding: 10px;
+}
+.news_coments{
+    color: white;
+    background-color: var(--verde-header);
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news_thumb img{
+
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+
+}
+article .news_title{
+
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+article .news_desc{
+
+    font-size: 14px;
+    line-height: 18px;
+    color: #5c5c5c;
+    margin-bottom: 30px;
+}
+aside .widget{
+    margin-left: 15px;
+}
+
+aside{
+    background-color: rgb(247, 245, 245);
+}
