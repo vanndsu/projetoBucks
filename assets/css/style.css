@@ -284,6 +284,10 @@ nav .active{
     align-items: center;
     
 }
+.logo-rede:hover{
+    background-color: rgb(193, 235, 146, 0.5);
+    transform: scale(1.05, 1.05);
+}
 .text-rede{
     margin-left: 5px;
 
