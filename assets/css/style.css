@@ -1,3 +1,6 @@
+
+/*https://www.rgbtohex.net/*/
+
 @font-face {
     font-family: bucksFont;
     src: url('../fonts/NBA\ Bucks.ttf');
@@ -20,17 +23,17 @@ header{
     display: flex;
     justify-content: center;    
     border-bottom: 3px solid var(--cor-fonte-bar);
-    
+    position: sticky;
+    top: 0px;   
+    width: 100%;
+   
 }
 
 .container{
-
     width: 800px;
     display: flex;
-    justify-content: space-between;
-      
-    
-    
+    justify-content: space-between;     
+        
 }
 nav ul, nav li{
     display: flex;
@@ -70,11 +73,12 @@ nav .active{
 /*PARTE DO BACKGROUND BUCKS*/
 #bg-bucks{
     height: 626px;
-    background-image: url('../images/bg-bucks.jpg');
+    background-image: url('../images/bgd-bucks.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
+    
     
 }
 .column{
@@ -221,6 +225,73 @@ nav .active{
     height: 100px;
     
 }
+.ante{
+    background-image: url('../images/anteto.png');
+    background-size: cover;
+    background-position: center;
+}
+.jrue{
+    background-image: url('../images/jrue.png');
+    background-size: cover;
+    background-position: center;
+}
+.brook{
+    background-image: url('../images/bro.png');
+    background-size: cover;
+    background-position: center;
+}
+.mid{
+    background-image: url('../images/mid.png');
+    background-size: cover;
+    background-position: center;
+}
+.pat{
+    background-image: url('../images/pat.png');
+    background-size: cover;
+    background-position: center;
+}
+.gray{
+    background-image: url('../images/gray.png');
+    background-size: cover;
+    background-position: center;
+}
+.redes{
+    margin-top: 10px;
+}
+.redes a{
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #252525;
+}
+.logo-rede{
+    width: 80px;
+    height: 50px;
+    background-color: var(--cor-fonte-bar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--verde-header);
+
+
+}
+.tiktok, .insta, .youtube{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+    
+}
+.text-rede{
+    margin-left: 5px;
+
+}
+.text-rede:hover{
+    text-decoration: underline;
+}
+
 /*widgets*/
 .widget{
     font-family: Arial, Helvetica, sans-serif;
@@ -255,19 +326,10 @@ article .news_date{
     background-color: var(--verde-header);
     font-size: 12px;
     padding: 10px;
-    position: relative;
+    
 }
-.news_posted_at .triangulo {
-    position: absolute;
-    bottom: -9px;
-    left: 50%;
-    margin-left: -29.1px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid var(--verde-header)
-  }
+
+
 .news_coments{
     color: white;
     background-color: var(--verde-header);
@@ -312,6 +374,10 @@ footer{
 .footer_menu{
     display: flex;
     flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
     
 
 }
@@ -333,18 +399,21 @@ footer{
 .m3{
     background-color: rgb(1, 90, 1);
 }
+
 .flexColunm{
     display: flex;
     flex-direction: column;
 }
 .footer_area{
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     
 }
 
 .footer_area_item{
     flex: 1;
+    color: rgb(121, 120, 120);
 }
 .footer_copy{
     border-top: 1px solid #2c2c2c;
